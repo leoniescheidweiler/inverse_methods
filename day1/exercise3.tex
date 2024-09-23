@@ -1,0 +1,12 @@
+\documentclass{scrartcl}
+\usepackage{mathtools}
+
+\begin{document}
+    \begin{align*}
+        \textnormal{cov}[y] &= E[(y - E(y))(y - E(y))^\textnormal{T}]\\
+        &= E[(Ax-AE[x])(Ax-AE(x))^\textnormal{T}]\\
+        &= E[A(x-E[x])(x-E[x])^\textnormal{T}A^\textnormal{T}]\\
+        &= AE[(x-E[x])(x-E[x])^\textnormal{T}]A^\textnormal{T}\\
+        &= A\textnormal{cov}[x]A^\textnormal{T}
+    \end{align*}
+\end{document}

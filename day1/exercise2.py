@@ -62,5 +62,7 @@ for i, data in enumerate([data1, data2, data3]):
     ax[0, i].set_xlim(-2, 12)
     ax[0, i].set_ylim(1, 8.2)
 
-    ax[1, i].contour(xx, yy, res, cmap="inferno_r")
+    # ax[1, i].contour(xx, yy, res, cmap="inferno_r")
+    ax[1, i].pcolormesh(xx, yy, res, cmap="inferno")
+    # ax[1, i].plot_surface(xx, yy, res, cmap="inferno")
 plt.show()
